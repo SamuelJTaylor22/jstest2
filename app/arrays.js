@@ -4,6 +4,9 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+    let first = arr.shift()
+    arr.push(first)
+ return arr
 }
 
 
@@ -16,6 +19,16 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+    let biggestNum = 0
+    for (let i = 0; i < arr.length; i++) {
+        const num = arr[i];
+        
+        if(num > biggestNum){
+            biggestNum= num
+        }
+        
+    }
+    return biggestNum
 }
 
 
@@ -28,6 +41,11 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+    for (let i = 0; i < arr.length; i++) {
+     arr[i] = arr[i]*arr.length
+        
+    }
+return arr
 }
 
 
